@@ -1,0 +1,226 @@
+/* Z-indexes
+
+top bar light: 10
+top bar dark: 10r
+caption line: 10
+caption word: 11
+
+
+*/
+
+body {
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+#phone {
+	height: 1486px;
+	width: 740px;
+	border: 10px solid #c4c4c4;
+	border-radius: 75px;
+}
+
+#home_button {
+	height: 100px;
+	width: 100px;
+	border-radius: 57px;
+	position: absolute;
+	top: 1350px;
+	left: 320px;
+	border: 7px solid #c4c4c4;
+}
+
+#physical_screen {
+	width: 660px;
+	height: 1156px;
+	background-color: black;
+	position:absolute;
+	left: 50px;
+	top: 175px;
+}
+
+#screen {
+	width: 640px;
+	height: 1136px;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#home_screen {
+	height: 100%;
+	width: 100%;
+	background-color: #aaa;
+	overflow: hidden; /* Hides anything that extends outside of the screen */
+	position: absolute; /* Hides anything that extends outside of the screen */
+	top: 0px;
+	left: 0px;
+}
+
+.circle {
+	background-color: white;
+	color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	position: absolute;
+	opacity: 0.3;
+}
+
+#top_bar_light {
+	font-size: 25px;
+	width: 640px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 10;
+}
+
+#top_bar_dark {
+	color: black;
+	font-size: 25px;
+	width: 640px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 10;
+}
+
+#top_carrier {
+	position: absolute;
+	top: 0px;
+	padding: 5px;
+}
+
+#top_time {
+	width: 640px;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	padding: 5px;
+}
+
+#top_battery {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 5px;
+}
+
+#dock {
+	background-color: grey;
+	opacity: 0.5;
+	width: 100%;
+	height: 185px;
+	position: absolute;
+	bottom: 0px;
+}
+
+#blank {
+	width: 640px;
+	height: 1136px;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 175px;
+	background-color: black;
+}
+
+.application_icon {
+	width: 125px;
+	height: 125px;
+	background-color: blue;
+	color: white;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	border-radius: 25px;
+}
+
+.application_label {
+	color: white;
+	position: absolute;
+	width: 125px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.youtube_icon {
+	background-color: #a00 !important;
+}
+
+#youtube_app {
+	background-color: #eee;
+	color: black;
+	height: 100%;
+	width: 100%;
+}
+
+#youtube_search_section {
+	width:640px;
+	height:100px;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#youtube_video {
+	width: 640px;
+	height: 320px;
+	background-color: black;
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	background-image: url('final_fantasy_xv.jpg');
+	background-size: 640px 320px;
+}
+
+#youtube_video_description {
+	width: 600px;
+	height: 180px;
+	position: absolute;
+	top: 480px;
+	left: 20px;
+	font-size: 30px;
+	background-color: white;
+	border: 1px solid #ddd;
+}
+
+#youtube_video_title {
+	padding: 15px;
+}
+
+#youtube_video_channel {
+	width: 600px;
+	height: 100px;
+	position: absolute;
+	top: 680px;
+	left: 20px;
+	background-color: white;
+	border: 1px solid #ddd;
+	font-size: 30px;
+}
+
+#youtube_video_channel_name {
+	padding: 15px;
+}
+
+.caption_line {
+	background-color: black;
+	height: 35px;
+	width: 640px;
+	position: absolute;
+	z-index: 10;
+}
+
+.caption_word {
+	position: relative;
+	color: white;
+	padding: 5px;
+	font-size: 25px;
+	z-index: 11;
+	float: left;
+}
